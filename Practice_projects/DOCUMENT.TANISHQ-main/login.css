@@ -1,0 +1,142 @@
+header>img{
+    margin-left: 34%;
+    height: 170px;
+}
+.main{
+    height: 500px;
+    width:90%;
+     margin-top: 20PX;
+    margin-left: 4%;
+    float: left;
+}
+
+.login{
+    width: 48%;
+    height: 450px;
+    border-right: 2px  solid rgb(0, 0, 0);
+    float: left; 
+    margin-left: 1%; 
+}
+#accordionExample{
+     width: 80%;
+     border-color:black !important;
+}
+
+ 
+.A{
+    margin-top: 15PX;
+}
+#a1{
+    color:black;
+    text-decoration: none;
+    margin-left: 5%;
+    font-size: 14px;
+    margin-top: px;
+}
+#a2{
+    color:black;
+    margin-top: 15px;
+    margin-left: 50%;
+    font-size: 14px;
+}
+.OTP{
+    text-align: center;
+    
+}
+.mobile{
+     float: Left;
+     color:black;
+ 
+} 
+.sel{
+    background-color: whitesmoke;
+    border:none;
+    width: 20%;
+    text-align: center;
+    height:55px;
+    margin-top: 20px;
+}    
+.no{
+    background-color: whitesmoke;
+    border:none;
+    width: 73%;
+ 
+    height:55px;
+    margin-top: 20px;
+    text-align: center;
+}
+.pass{
+    background-color: whitesmoke;
+    border:none;
+    width: 100%;
+    text-align: center;
+    height:55px;
+    margin-top: 20px;
+}
+.email{
+ 
+    color:black;
+}
+
+ 
+.viaem{
+    display:none;
+}
+.Email:hover{
+
+    text-decoration: underline;
+ }
+ .Email:hover .viaem{
+    display: block;
+}
+.Email:hover .viamob{
+    display: none;
+}
+#twoadf>button{
+    width: 100%;
+    background-color:black;
+    color:white;
+    border-color: black;
+    padding:10px 10px;
+}
+#twoad>input{
+    width: 100%;
+    margin-top: 15px;
+    height: 35PX;
+    background-color:whitesmoke;
+    border-color: whitesmoke;
+}
+#threead>p{
+    text-align: center;
+}
+#threead>button{
+    text-align: center;
+    background-color:black;
+    color:white;
+    border-color: black;
+    padding:7px 10px;
+    margin-left: 10%;
+    width:35%;
+}
+.signup{
+    width: 40%;
+    height: 450px;
+     float: left;
+    margin-left: 10%; 
+}
+
+.signup>ul{
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+.signup>a>button{
+     width: 100%;
+     background-color:black;
+     color:white;
+     margin-top: 40px;
+     padding:10px 20px;
+     border-color: black;
+     font-size: 26px;
+     font-weight: 400;
+}

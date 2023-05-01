@@ -1,0 +1,98 @@
+header>img{
+    margin-left: 34%;
+    height: 170px;
+}
+
+.main{
+    width: 36%;
+    height: auto;
+     float: left;
+    margin-left: 32%; 
+    border: 1px solid black;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+.signup{
+    width: 90%;
+    margin-left: 5%;
+}
+.sign{
+    height: 50PX;
+    width: 170px;
+    position: absolute;
+    top: 168px;
+    left: 593px;
+   color:black;
+   font-size: 30px;
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+}
+ .sele{
+     background-color: whitesmoke;
+     border:none;
+     width: 20%;
+     height:55px;
+     text-align: center;
+     margin-top: 50px;
+ }
+ .fname{
+    background-color: whitesmoke;
+    border:none;
+    width: 68%;
+    margin-left: 10%;
+    height:55px;
+    text-align: center;
+}
+.lname{
+    background-color: whitesmoke;
+    border:none;
+    width: 100%;
+    text-align: center;
+    height:55px;
+    margin-top: 20px;
+}
+.sel{
+    background-color: whitesmoke;
+    border:none;
+    width: 20%;
+    text-align: center;
+    height:55px;
+    margin-top: 20px;
+}
+.no{
+    background-color: whitesmoke;
+    border:none;
+    width: 73%;
+   margin-left:  5%;
+    height:55px;
+    margin-top: 20px;
+    text-align: center;
+}
+.email{
+    background-color: whitesmoke;
+    border:none;
+    width: 100%;
+    text-align: center;
+    height:55px;
+    margin-top: 20px;
+}
+.pass{
+    background-color: whitesmoke;
+    border:none;
+    width: 100%;
+    text-align: center;
+    height:55px;
+    margin-top: 20px;
+}
+
+.main>button{
+    width: 100%;
+    background-color:black;
+    color:white;
+    margin-top: 40px;
+    padding:10px 20px;
+    border-color: black;
+    font-size: 20;
+    font-weight: 200;
+    font-weight: 400;
+}
