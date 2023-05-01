@@ -1,0 +1,28 @@
+https://www.tutorialspoint.com/javascript/javascript_online_quiz.htm
+
+https://edabit.com/challenges/javascript
+
+https://careerfoundry.com/en/tutorials/web-development-for-beginners/an-introduction-to-javascript/
+
+https://javascript.info/
+
+https://community.edyoda.com/t/simple-aptitude-question/2550?_ga=2.223299475.946428594.1677471791-1634170330.1673847982
+
+https://www.kirupa.com/html5/strings_in_javascript.htm
+
+https://github.com/uzmayasmeen2461
+
+Birth Year Calculator
+Coin Toss Game
+Grade System
+
+Carousel
+New Year Calculator
+Rock Paper Scissors Game
+
+
+Quiz:
+https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS
+https://www.interviewbit.com/javascript-mcq/#what-will-be-the-output-of-the-following-code-snippet-cbcd
+https://interview.leetcode.com/interview/
+

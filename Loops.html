@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in js</title>
+</head>
+<body>
+    <script>
+        //Q1.Write a program to print marks of student of an object using for loop,let  obj={manisha:98,vaibhav:89,Sangam:100,}
+        let marks={
+            Manisha:98,
+            Vaibhav:89,
+            Sangam:100,
+            Sweety:78
+        }
+        for(let i=0; i<Object.keys(marks).length; i++){
+            //i<Object.keys(marks).length it gives us keys lenth of object
+            console.log("The marks of "+Object.keys(marks)[i]+" are "+marks[Object.keys(marks)[i]]);
+        }
+        console.clear();
+        // Q2.Write a program to print marks of student of an object using for in loop,let  obj={manisha:98,vaibhav:89,Sangam:100,} ---->using for in loop it simple to solve compare to for loop.
+
+        for(let key in marks){
+            // console.log(key);
+            console.log("The marks of "+key+ " are "+marks[key]);
+        }
+        console.clear();
+        //Q3.Write a program to print 'try again' untill print correct number
+        let correctNumber =17;
+        let i;
+        while(i!=correctNumber){
+            alert("Opps😥 Try again");
+            i=prompt("Enter Number here:");
+            
+        }
+        alert("You entered Correct Number");
+    </script>
+</body>
+</html>

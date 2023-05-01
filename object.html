@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object in js</title>
+  </head>
+  <body>
+    <script>
+      // let x=prompt("Enter a value...");
+      // let text;
+      // switch (x){
+      //     case 0:
+      //         text="off"
+      //         break;
+      //     case 1:
+      //         text="on"
+      //         break;
+      //         default:
+      //             text="no value found"
+      // }
+      // alert(text);
+      // let ch=prompt("Enter a Alphabet:")
+      // switch (ch) {
+      //   case "a":
+      //   case "e":
+      //   case "i":
+      //   case "o":
+      //   case "u":
+      //   case "A":
+      //   case "E":
+      //   case "I":
+      //   case "O":
+      //   case "U":
+      //     console.log("It is vowel");
+      //     break;
+      //   default:
+      //   console.log("It is Consonant");
+      //     break;
+      // }
+      // console.log(!!"false" == !!"true");
+      // console.log(undefined == null)
+      // console.log(undefined === null)
+      // var str="Mo Tu We Th Fr Sa Su"
+      // console.log(str.slice(6,10));
+      // var strr="Hello world"
+      // strr.trim()
+      // console.log(strr)
+      // var num =123.4567;
+      // console.log(num.toFixed())
+      // console.log(typeof num.toFixed(2))
+      // console.log(parseFloat(10))
+      // console.log(parseInt('123xyz'))
+      // console.log(Number('123xyz'))
+      // console.log("_________________________________")
+      // console.log(parseInt(true))
+      // console.log(Number(true))
+//       var day="FR";
+// switch (day) {
+//   case "Mo":
+//     console,log("monday")
+//     case "Tu":
+//     console,log("tu")
+//     case "We":
+//     console,log("weday")
+//     case "Th":
+//     console,log("Thday")
+//     case "Fr":
+//     console,log("fr")
+//     case "Sa":
+//     console,log("saday")
+//     case "Su":
+//     console,log("sunday")
+// }
+// console.log(0?true:false)
+// console.log("0"?true:false)
+// console.log(parseInt('123xyz'))
+// console.log(parseInt('A123xyz'))
+// var val1="true";
+// var val2="false";
+// var val3=true;
+// var val4=false;
+// console.log(!!val1 == !!val2);
+// console.log(!!val3 == !!val4);
+// const coder={
+//   isStuding:false,
+//   introduction:function(){
+//     console.log(`My name is ${this.name}.am I studing?:${this.introduction}`);
+//   }
+// }
+// const me=Object.create(coder);
+// me.name="Manisha";
+// me.isStuding=true;
+// me.introduction();
+//Class
+class Vehicle{
+  constructor(name,color,engine){
+    this.name=name;
+    this.color=color;
+    this.engine=engine;
+  }
+  getDetails(){
+    return(`The name of car is ${this.name} The color of car is ${this.color} The engine is ${this.engine}`);
+  }
+}
+let car1=new Vehicle('Honda','Black','automatic');
+let car2=new Vehicle('Thar','Black','automatic');
+console.log(car1.getDetails());
+    </script>
+  </body>
+</html>

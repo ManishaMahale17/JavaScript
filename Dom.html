@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM</title>
+</head>
+<body>
+    <h1>Document Object Model</h1>
+    <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg" alt="white_flower" height="200px" width="200px">
+    <img src="https://i.pinimg.com/564x/95/6a/28/956a28f4a1d60e3f654340487014afbd.jpg"   alt="rose" height="200px" width="200px">
+    <img src="https://thumbs.dreamstime.com/b/aster-flowers-art-design-26968847.jpg"     alt="rose" height="200px" width="200px">
+    <p>Findind elemets buy query selector</p>
+    <p class="demo">Hello DOM</p>
+    <p class="demo">Example</p>
+    <p id="intro"></p>
+    <script>
+     //change ist position image have to change.
+     const image=document.getElementsByTagName("img")[0];
+     console.log(image);
+     image.setAttribute("src","https://img.freepik.com/free-photo/top-view-roses-flowers_23-2148860041.jpg?w=2000");
+     //document.querySelectorAll
+     //target all css selector-id class type attributes etc
+ const demo=document.querySelectorAll("p.demo");
+ console.log(demo)//give node list
+//tagert both p tag using this.
+const intro=document.getElementById("intro");
+intro.innerHTML="The combination is"+demo[0].innerHTML;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

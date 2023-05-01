@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Opeartion</title>
+  </head>
+  <body>
+    <script>
+     let str="Manisha";
+     console.log(str);//Manisha
+     console.log("Length of string is:"+str.length);//Length of string is:7
+     console.log("2nd cahr of string:"+str[2]);//2nd cahr of string:n
+     let fri1="Manu";
+     let fri2="Vaibhav";
+     console.log("---------Tempalte literals---------");
+     let sentense=`${fri1} and ${fri2} are friends!!`
+     console.log(sentense);
+     console.clear();
+     console.log("---------escape sequence char---------");
+    //  let fruit='fruit\'s';
+    let fruit='fruit\t';
+     console.log(fruit);//fruit's
+     console.log(fruit.length);//7 bcz \'consider signle character'
+     console.log("---------String Methods---------");
+     let person="Manisha";
+     let per1="     Vaibhav";
+    
+     console.log(person.toLowerCase());//manisha
+    //  console.log(person.toUpperCase());
+    console.log(person.slice(2,4));//ni(2 to 4 index number it print)
+    console.log(person.slice(4,7));//sha
+    console.log(person.slice(4));//sha(if not give 2 nd value the print whole string)
+    console.log(person.replace("Ma","Ta"));//Tanisha
+    console.log(person.concat(per1+"Tambe"));//Manisha     VaibhavTambe
+    console.log(per1.trim());//Vaibhav
+    
+    //Q1.print in js console.log("Manu\".length")
+    let exString="Manu\"";
+    console.log(exString);//Manu"
+    console.log(exString.length);//5
+    //Q2.Explorer inclued ,startwith ,endwith methods of string
+    let myexample="This is example of string methods";
+    console.log(myexample);
+    console.log(myexample.includes("is"));//true->it true true or false if include alphabates or npot they show
+    console.log(myexample.startsWith("T"));//true= check string start with T or not
+    console.log(myexample.endsWith("s"));//true= check string end with
+    console.log(myexample.search("e"));//Check index of e:8
+    console.log(myexample.toUpperCase());//THIS IS EXAMPLE OF STRING METHODS
+    console.log(myexample.match("s"));//['s', index: 3, input: 'This is example of string methods', groups: undefined]
+    //Q3.Extract amount of given string "Plase give me rs 1000"
+    let givenStr="Please give Rs 1000";
+    console.log(givenStr);
+    let amount=Number.parseInt(givenStr.slice(15));
+    console.log(amount);//1000
+ //Q4.change 4 th character of given string "Plase give me rs 1000"
+ //String is immutable we cant change the original string.
+    
+
+     
+ 
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimingFunctions</title>
+</head>
+<body onload="startTime()">
+    <!-- <p id="demo"></p> -->
+    <!-- <button onclick="setTimeout(myFun(), 5000);">Try it</button> -->
+    <!-- <button onclick="setTimeout(myFunction(),5000);">Try it</button> -->
+    <div id="txt"></div>
+    
+<script>
+
+//The window object allows execution of code at specified time intervals.
+// The two key methods to use with JavaScript are:The setTimeout() and setInterval() are both methods of the HTML DOM Window object.
+
+// 1.setTimeout(function, milliseconds)
+// Executes a function, after waiting a specified number of milliseconds.
+// function myFun(){
+//  alert("This is setTimeout")
+// }
+//clearTimeout() method stops the execution of the function specified in setTimeout().
+// function myFunction(){
+//   alert("This is setTimeout")
+// }
+
+
+//https://momentjs.com/
+// 2.setInterval(function, milliseconds)
+// Same as setTimeout(), but repeats the execution of the function continuously.
+// setInterval(myTimer, 1000);
+// function myTimer(){
+//   const d=new Date();
+//   // document.getElementById('demo').innerHTML=d.toLocaleTimeString();
+//   document.getElementById('demo').innerHTML=d.toLocaleDateString();
+// }
+//clearInterval() method stops the executions of the function specified in the setInterval() method.
+
+//Clock Created using timing function
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</body>
+</html>

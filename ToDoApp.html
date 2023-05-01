@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+  </head>
+  <body>
+    <h3>ToDo APP</h3>
+    Enter a ToDo:<input type="text" id="input" oninput="onInput()" /> 
+     <p id="para"></p>
+     <ul id="list">
+      
+
+     </ul>
+    <script>
+      //Home Work:Add functionalities to the TODO App
+      const input = document.getElementById("input");
+
+      const list = document.getElementById("list");
+      function onInput() {
+        //console.log(input.value)
+        list.innerText = " " + input.value;
+      }
+
+    </script>
+  </body>
+</html>

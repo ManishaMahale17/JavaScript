@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <p id='demo'></p>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is</button>
+    
+    <br><br><br>
+    <p class='demo'></p>
+    <button onclick="document.getElementsByClassName('demo').innerHTML=Date()">The time is</button> 
+    <!-- Following are the code changes the content of its own element using (this.innerHTML):-->
+    <button onclick="this.innerHTML=Date()">Click me to see time</button>
+    <br><br>
+    <button onclick="displayDate()">Click me</button>
+    <p id="demo1"></p>
+    <br><br>
+    <button id="btn" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse Hover Events</button>
+    <br><br>
+    <button id="btn2">Inner Text Change</button>
+    <br><br>
+    <button id="btn3">Keyboard Events</button>
+     <br><br>
+     <h3>OnInput Event</h3>
+        <input type="text" id="input" oninput="onInput()">
+         <p id="para"></p>
+         <h3>Onchange Event</h3>
+         <input type="text" id="input1" value="hello" onchange="onChange(this.value)">
+         <p id="para1"></p>
+         <h3>OnFocus Event</h3>
+         <input type="text" id="input2" onfocus="focusFunction()">
+         <p id="para2"></p>
+         <h3>OnSubmit Event</h3>
+     <form action="#" onsubmit="submitFunction()">
+        Enter Name:<input type="text" id="name" name="name">
+        Enter password:<input type="password" id="password" name="password">
+        <input type="submit" value="Sumbit">
+        <br><br>
+     </form>
+     <p id="para4" onmousedown="onMouseDown()" onmouseup="onMouseUp()">This is paragraph</p>
+
+
+    <script>
+        function displayDate(){
+          document.getElementById('demo1').innerHTML=Date();
+        }
+        // DOM Events allow JavaScript to add event listener or event handlers to HTML elements.
+//onchange	An HTML element has been changed
+// onclick	The user clicks an HTML element
+// onmouseover	The user moves the mouse over an HTML element
+// onmouseout	The user moves the mouse away from an HTML element
+// onkeydown	The user pushes a keyboard key
+// onload	The browser has finished loading the page
+ function mouseOver(){
+   btn.style.color='red'
+   btn.innerText="suprise me"
+ }
+ function mouseOut(){
+    btn.style.color='Green';
+   btn.innerText="suprise me again"
+ }
+ const btn2=document.getElementById('btn2');
+ btn2.addEventListener('mouseover', function(){
+    btn2.innerText=("Text is changed");
+ })
+ //onload()
+ window.onload =function(){
+    alert("please wait...");
+ }
+ //Keyboard event:onkeyup,onkeydown,onkeypess
+const btn3=document.getElementById("btn3");
+// btn3.addEventListener('keydown',function(){
+//     console.log("keY presses")
+// })
+//event=e; so we can write this also function(e)
+btn3.addEventListener('keyup',function(event){
+    
+   console.log(`key press:${event.key}`);
+   console.log(event)
+   btn3.innerText=`key press:${event.key}`;
+})
+//Form Events:onblur,onchange,onfocus,oninput,onsumit,default behaviour
+//1.oninput()
+const input=document.getElementById("input");
+
+const para=document.getElementById('para');
+function onInput(){
+    console.log(input.value)
+    para.innerText="You wrote "+input.value;
+}
+//2.onchange
+const para1=document.getElementById('para1');
+function onChange(val){
+    alert("change value is:"+val)
+}
+//onfocus
+function focusFunction(){
+    document.getElementById('input2').style.backgroundColor='green';
+}
+//onblur
+const input2 = document.getElementById('input2');
+input2.addEventListener('blur', function(){
+    input2.style.backgroundColor='blue';
+});
+//onsubmit
+const name=document.getElementById('name');
+function submitFunction(){
+    alert(`Form submit successfully :${name.value}`);
+    console.log(name.value);
+}
+//mouseDown
+const para4=document.getElementById('para4');
+function onMouseDown(){
+    para4.style.backgroundColor="lightgreen";
+}
+function onMouseUp(){
+    para4.style.backgroundColor="lightpink";
+}
+</script>
+</body>
+</html>

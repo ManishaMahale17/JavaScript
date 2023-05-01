@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop</title>
+  </head>
+  <body>
+    <script>
+      // 1.Write a JavaScript program that uses a for loop to print out the numbers from 1 to 10
+      for (let i = 0; i <= 10; i++) {
+        console.log(i);
+      }
+      //2.Write a JavaScript program that uses a while loop to print out the numbers from 1 to 10.
+      var numbers = 0;
+      while (numbers < 10) {
+        numbers += 1;
+        console.log(numbers);
+      }
+      //3.Write a JavaScript program that uses a for loop to calculate the sum of all numbers from 1 to 10
+
+      let sum = 0;
+      const n = 10;
+      for (let i = 1; i <= n; i++) {
+        sum += i;
+      }
+      console.log("sum:", sum);
+      //4.Write a JavaScript program that uses a for loop to print out the multiplication table for the number 5
+
+      const num = 5;
+      for (let i = 1; i <= 10; i++) {
+        const result = i * num;
+
+        console.log(`${num} * ${i} = ${result}`);
+      }
+      //5.Write a JavaScript program that uses a while loop to print out the Fibonacci sequence up to the number 100.
+      // program to generate fibonacci series up to a certain number
+      // take input from the user
+      const number = 100;
+      let n1 = 0,
+        n2 = 1,
+        nextTerm;
+
+      console.log("Fibonacci Series:");
+      console.log(n1);
+      console.log(n2);
+
+      nextTerm = n1 + n2;
+
+      while (nextTerm <= number) {
+        console.log(nextTerm);
+
+        n1 = n2;
+        n2 = nextTerm;
+        nextTerm = n1 + n2;
+      }
+    </script>
+  </body>
+</html>

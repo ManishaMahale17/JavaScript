@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js ForLoop</title>
+  </head>
+  <body>
+    <script>
+      //print number 1 to 10 using for loop
+      // for(let i = 0; i < 10; i++){
+      //     console.log(i);
+      // }
+      console.log(
+        "_______________________________________________________________________________________________________"
+      );
+      //programs to add frist n natural numbers
+      // let sum=0;
+      // let n=prompt("Enter number:");
+      // n=Number.parseInt(n);
+      // for(let i = 0; i < n; i++){
+      //     sum += (i+1);
+      // }
+      // console.log(sum);
+      console.log(
+        "_______________________________________________________________________________________________________"
+      );
+      //programs to factorial natural numbers
+
+    //   var inputNumber = prompt("Please enter an integer");
+    //   var total = 1;
+
+    //   for (i = 1; i <= inputNumber; ++i) {
+    //     total = total * i;
+    //   }
+
+    //   console.log(inputNumber + "! = " + total);
+    console.log(
+        "_______________________________________________________________________________________________________"
+      );
+      //Program to prime number
+      console.log(
+        "_______________________________________________________________________________________________________"
+      );
+      //Programs for factorial
+      console.log(
+        "_______________________________________________________________________________________________________"
+      );
+      //For in loop
+      let obj= {
+          name:"Manisha",
+          surname:"Tambe",
+          city:"Pune",
+          home:"Belapur"
+      }
+      for (let a in obj){
+        console.log("My detailes "+a+" is "+obj[a]);
+
+      }
+      console.log(
+        "_______________________________________________________________________________________________________"
+      );
+      //For off loop- for (let a in obj) not use obj here use for arrays and string
+      for (let b of "Manisha"){
+        console.log(b);
+      }
+      console.log("********************************************************************************");
+      //For loop with arrays
+      let num=[1,2,3,4,5,6]
+      for(let i=0;i<num.length;i++){
+        console.log(num[i]);
+      }
+      //Print sqaare for each element using forEach loop
+      num.forEach((elements)=>{
+        console.log(elements*elements)
+      });
+      //Array from
+      let name="Manisha";
+      let arr=Array.from(name);
+      console.log(arr);
+      //for ..of
+      for(i of num){
+        console.log(i)
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </script>
+  </body>
+</html>

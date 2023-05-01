@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Practice problems</h1>
+    <!--******************* What can JavaScript do? ************************************************************ -->
+
+    <!-- 1.Javascript  can change html elemwnts -->
+    <!-- <p id="ex1" >Js change html elements</p>
+    <button type="button" onclick="document.getElementById('ex1').innerHTML='Welcome!'">Click me</button> -->
+    <br>
+    <!-- 2.Javascript can change html attribute value -->
+    <!-- <img src="https://thumbs.dreamstime.com/b/aster-flowers-art-design-26968847.jpg" alt="Images" id="image" width="200px" height="200px"><br><br>
+    <button onclick="document.getElementById('image').src='https://www.shutterstock.com/image-photo/dahlia-flower-design-260nw-81126835.jpg'">Click me and change image</button> -->
+    <br>
+     <!-- 3.Javascript can change CSS style -->
+     <!-- <p id="ex2">Click button to see font size is change</p>
+     <button onclick="document.getElementById('ex2').style.fontSize='35px'">Click Me </button> -->
+     <br>
+     <!-- 4.Javascript  can hide html element -->
+     <!-- <p id="ex3">Click on button to see js can hide html element</p>
+     <button onclick="document.getElementById('ex3').style.display='none'">Click me</button> -->
+     <br>
+     <!-- 5.JavaScript can show hidden HTML elements. -->
+     <!-- <p id="ex4" style="display: none">JavaScript can show hidden HTML elements</p>
+     <button onclick="document.getElementById('ex4').style.display='block'">Click me</button> -->
+
+     <!--******************* Where to Insert JavaScript ****************************************************** -->
+     <!-- <p id="ex1">This is para1</p>
+     <button type="button" onclick="myFunction()">Click me</button> -->
+     <!-- <p id="ex2"></p>
+     <p id="ex4"></p>
+     <button type="button" onclick="myFunction1('Hello Good morning')">Click me</button>
+     <button type="button" onclick="myFunction1('Hello Good evening')">Click me</button> -->
+     
+     <p id="ex4"></p>
+     <!-- <button onclick="document.getElementById('ex4').innerHTML=Date()">Click me</button> -->
+     <!-- <button onclick="this.innerHTML=Date()">Time is</button> -->
+     <button onclick="displayDate()">Click me to see time</button>
+     <p id="demo"></p>
+    <button onclick="domainName()">Try it</button>
+    <form>
+        <input type="button" id="btn1" value="OK">
+    </form>
+    <p id="btn01"></p>
+    <button onclick="displayEvent()">Click me to Disable</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+//     function myFunction(){
+//         document.getElementById('ex1').innerHTML="paragraph changed";
+//     }
+//   document.getElementById('ex2').innerHTML=10.50;
+
+//   var carName = "Volvo";
+// var carName;
+// document.getElementById("demo").innerHTML = carName;
+
+
+// function myFunction1(txt){
+//     document.getElementById('ex4').innerHTML=txt;
+// }
+// console.log("10"+20+30)
+function displayDate(){
+   document.getElementById('ex4').innerHTML=Date();
+}
+function domainName() {
+//   document.getElementById("demo").innerHTML = document.domain;
+    //  document.getElementById("demo").innerHTML = document.lastModified;
+    // document.getElementById("demo").innerHTML = document.title;
+    // document.getElementById("demo").innerHTML = document.URL;
+    
+       document.open("PracticeProblem/html","replace")
+       document.write("<h1>Practice Problem on Dom</h1>");
+       document.close();
+}
+function displayEvent(){
+document.getElementById("btn1").disabled=true;
+}
+    </script>
+</body>
+</html>
