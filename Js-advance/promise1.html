@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const apiUrl='https://pokeapi.co/api/v2/pokemon?limit=50';
+        function getPromise(apiUrl){
+            let promise=new Promise(function(resolve,reject){
+            let req=new XMLHttpRequest();
+            req.open('GET',apiUrl)
+            req.onload=function(){
+                if(req.status==200){
+                    resolve(req.response)
+                }
+                else{
+                    reject("There is an error")
+                }
+            };
+            req.send();
+        });
+        return promise;
+    }
+    let promise=getPromise(apiUrl)
+    const consumer=()=>{
+        promise.then(
+            (result)=>{
+                console.log({result})
+            },
+            (error)=>{
+                console.log("Error: " + error);
+            }
+        );
+    }
+    consumer();//{result: '{"count":1281,"next":"https://pokeapi.co/api/v2/po…,"url":"https://pokeapi.co/api/v2/pokemon/50/"}]}'}
+    </script>
+</body>
+</html>

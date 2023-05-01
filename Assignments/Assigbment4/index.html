@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SHOPLANE - A Place For Shopping</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Here are all the details for the assignment.
+
+You have to design this product details page. You can find the reference website here to get the design and exact styles:
+
+https://shoplane.netlify.app/product.html?product_id=1
+
+
+
+Functionalities to be implemented:
+
+- You DO NOT have to implement the top bar.
+
+- You DO NOT have to implement the "Add to Cart" button click.
+
+- You DO NOT have to design the footer.
+
+- The entire page is dynamically generated including the Text and Images.
+
+- On the small image click, it should get a border and should be loaded in the preview section on left.
+
+- On page load, the first small image should get loaded in preview and should get the active border.
+
+
+
+You can find the product data to be rendered here:
+
+https://codepen.io/qaifikhan/pen/jOreYEp?editors=0010-->
+
+    <section id="main" class="row">
+      <div id="main_image_box">
+        <img id="main_image" data-img="image_0" src="" />
+      </div>
+      <div id="content" class="column">
+        <h1 id="name">[name]</h1>
+        <h4 id="brand">[brand]</h4>
+        <h3 id="price">Price: Rs <span id="price_value">[price]</span></h3>
+        <div id="description_box" class="column">
+          <h3>Description</h3>
+          <p id="description">[description]</p>
+        </div>
+        <div id="product_preview_box" class="column">
+          <h3>Product Preview</h3>
+          <div id="preview_images" class="row">
+            <!-- item images -->
+          </div>
+        </div>
+        <button id="add_to_cart_btn">Add to Cart</button>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

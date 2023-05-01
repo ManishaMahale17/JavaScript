@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic</title>
+  </head>
+  <body>
+    <h1>BASIC of JavaScript</h1>
+    <p id="demo"></p>
+    <!-- 
+<button type="button" onclick="document.getElementById('demo').innerHTML
+=Date()">Click me display Date and Time</button>
+<p id="demo"></p> -->
+    <p>Click the button to print the current page.</p>
+
+    <button onclick="window.print()">Print this page</button>
+    <script>
+      // using innerHTML:
+
+      document.getElementById("demo").innerHTML = 5 + 8;
+      // document.write(5 + 6);
+      // window.alert(122 + 6);
+      console.log("Basic");
+      console.log((document.getElementById("demo").innerHTML = 5 + 8));
+      const a = "manisha";
+      a.toUpperCase();
+      console.log(a);
+      //Practice Question
+      // 1.What does the “continue” keyword do inside a loop?
+      // Ans:The continue keyword is used to end the current iteration in a for loop (or a while loop), and continues to the next iteration.
+      console.log(
+        "________________________________________________________________"
+      );
+
+      function foo() {
+        let a = 0;
+
+        let b = 0;
+
+        a++; //0
+
+        return a; //1
+      }
+
+      foo();
+
+      console.log(typeof a); //string
+
+      console.log(typeof b); //undefined
+
+      console.log(
+        "________________________________________________________________"
+      );
+      const clothes = ["jacket", "t-shirt"];
+
+      clothes.length = 0;
+
+      console.log(clothes[0]); //undefined
+      console.log(
+        "________________________________________________________________"
+      );
+
+      //   const length = 4;
+
+      //   const numbers = [];
+
+      //   for (var i = 0; i < length; i++) {
+      //     numbers.push(i + 1);
+      //   }
+
+      //   console.log(numbers);//[1, 2, 3, 4]
+      console.clear();
+      const length = 4;
+
+      const numbers = [];
+
+      for (var i = 0; i < length; i++) {}
+      
+
+      numbers.push(i + 1);//4+1
+
+      console.log(numbers);//[5]
+    </script>
+  </body>
+</html>

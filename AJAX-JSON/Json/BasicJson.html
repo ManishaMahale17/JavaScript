@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <script>
+        var myJson=`{
+    "name": "Manisha",
+    "age": 30,
+    "education":true,
+    "lastName": "Tambe",
+    "ShopItems": ["Dress","Suits","Jackets"],
+    "myObj": {
+        "name": "Vaibhav",
+        "age":30,
+        "weight":60
+    }
+}`;
+console.log(JSON.parse(myJson));
+console.log((myJson[2]));
+    </script>
+</body>
+</html>

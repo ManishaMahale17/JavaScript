@@ -1,0 +1,5 @@
+Using ajax we can :
+1.update web page without reloading page,
+2.Request data from a server - after the page has loaded
+3.Receive data from a server - after the page has loaded
+4.Send data to a server - in the background 

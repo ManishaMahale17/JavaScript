@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <input type="button" value="Back" onclick="goBack()">
+    <input type="button" value="Forward" onclick="goForward()">
+    <script>
+    //The Browser Object Model (BOM) allows JavaScript to "talk to" the browser.
+    //1.Window method
+    // document.getElementById('demo').innerHTML="Browser inner width: " + window.innerWidth;
+    document.getElementById('demo').innerHTML="Browser inner Height: " + window.innerHeight;
+   //window.open() - open a new window
+// window.close() - close the current window
+// window.moveTo() - move the current window
+// window.resizeTo() - resize the current window
+
+//2.window.screen
+//The window.screen object contains information about the user's screen.
+// screen.width
+// screen.height
+// screen.availWidth
+// screen.availHeight
+// screen.colorDepth
+// screen.pixelDepth
+//document.getElementById('demo').innerHTML="screen.width:" + screen.width;
+//document.getElementById('demo').innerHTML="screen.width:" + screen.colorDepth;
+document.getElementById('demo').innerHTML="screen.width:" + screen.pixelDepth;
+
+//3.window.location
+//window.location object can be used to get the current page address (URL) and to redirect the browser to a new page.
+// window.location.href ->returns the href (URL) of the current page
+// window.location.hostname ->returns the domain name of the web host
+// window.location.pathname--> returns the path and filename of the current page
+// window.location.protocol-> returns the web protocol used (http: or https:)
+// window.location.assign()=> loads a new document
+document.getElementById('demo').innerHTML="window.location.href:" + window.location.href;
+
+//4.window.history 
+//The window.history object contains the browsers history.
+// The window.history object can be written without the window prefix.It can use in eg ecommerce website when we want to go back privious page.For history.forward one page forward.
+// history.back() - same as clicking back in the browser
+// history.forward() - same as clicking forward in the browse
+
+function goBack() {
+  window.history.back()
+}
+function goForward() {
+  window.history.forward()
+}
+
+//5.window.navigator 
+//it object can be written without the window prefix.
+// navigator.cookieEnabled
+// navigator.appCodeName
+// navigator.platform
+document.getElementById('demo').innerHTML="navigator.cookieEnabled:"+navigator.cookieEnabled
+
+//6.cookies
+//Cookies are data, stored in small text files, on your computer.
+document.write("cookiee")
+var username = 'John Doe';
+document.cookie='username=John Doe';//create cookie
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";// add an expiry date (in UTC time). By default, the cookie is deleted when the browser is closed
+let x=document.cookie;
+//Local Storage
+//Key-value pairs
+// Set Item
+localStorage.setItem("lastname", "Smith");
+// Retrieve
+document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
+//The localStorage object stores data with no expiration date.
+
+//The data is not deleted when the browser is closed, and are available for future sessions.
+// The sessionStorage Object which stores data for one session.
+
+// (The data is deleted when the browser window is closed)
+
+
+
+
+    </script>
+    
+</body>
+</html>
