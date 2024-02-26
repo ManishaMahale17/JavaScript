@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "quiz">The Quiz App</div>
+    <div class = "flex-margin">
+      <form class = "box" method = "POST" name="quiz" onsubmit = "return false">
+        <div class = "qustions">
+          <span class = "question"> Q1. What is ReactJS? </span>
+          <span class = "options-part">
+          <input class = "middle-radio" type="radio" name="ans1" value="1">
+          <label style = "background-color: #2b3252"> Server side framework </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans1" value="2">
+          <label style = "background-color: #2b3252"> Javscript library </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans1" value="3">
+          <label style = "background-color: #2b3252"> both a& b </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans1" value="4">
+          <label style = "background-color: #2b3252"> none of above  </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q2.Identify the command used to create a react app?</span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans2" value="1">
+          <label style = "background-color: #2b3252"> npm create-react-app </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans2" value="2">
+          <label style = "background-color: #2b3252"> npm install appname </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans2" value="3">
+          <label style = "background-color: #2b3252"> npx create-react-app appname </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans2" value="4">
+          <label style = "background-color: #2b3252"> npm install create-react-app appname </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q3. Which of the following port is the default where webpack-dev-server runs? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans3" value="1">
+          <label style = "background-color: #2b3252"> 4000 </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans3" value="2">
+          <label style = "background-color: #2b3252"> 3000</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans3" value="3">
+          <label style = "background-color: #2b3252"> 8080 </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans3" value="4">
+          <label style = "background-color: #2b3252"> 5000 </label>
+          </span>
+        </div>
+
+
+        <div class="qustions">
+          <span class="question"> Q4. In MVC, what does React.js act as? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans4" value="1">
+          <label style = "background-color: #2b3252"> Model </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans4" value="2">
+          <label style = "background-color: #2b3252"> Controller</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans4" value="3">
+          <label style = "background-color: #2b3252"> View </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans4" value="4">
+          <label style = "background-color: #2b3252"> Middleware </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q5. JSX stands for __________? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans5" value="1">
+          <label style = "background-color: #2b3252"> Json </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans5" value="2">
+          <label style = "background-color: #2b3252">Javascript and angularJs</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans5" value="3">
+          <label style = "background-color: #2b3252">Json XML </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans5" value="4">
+          <label style = "background-color: #2b3252"> Javascript XML</label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q6. Among the following which is used to create a class inheritance? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans6" value="1">
+          <label style = "background-color: #2b3252"> Inherits </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans6" value="2">
+          <label style = "background-color: #2b3252"> extends</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans6" value="3">
+          <label style = "background-color: #2b3252"> create </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans6" value="4">
+          <label style = "background-color: #2b3252"> this </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q7. What is ReactJS mainly used for building? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans7" value="1">
+          <label style = "background-color: #2b3252"> database </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans7" value="2">
+          <label style = "background-color: #2b3252"> connectivity</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans7" value="3">
+          <label style = "background-color: #2b3252"> user Interface </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans7" value="4">
+          <label style = "background-color: #2b3252"> Design platform </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q8. What of the following is used in React.js to increase performance? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans8" value="1">
+          <label style = "background-color: #2b3252"> DOM </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans8" value="2">
+          <label style = "background-color: #2b3252"> VDOM</label>
+          </span>
+          <span class="options-part">
+            <input class="middle-radio" type="radio" name="ans8" value="2">
+            <label style = "background-color: #2b3252"> Both a and b</label>
+            </span>
+            <span class="options-part">
+              <input class="middle-radio" type="radio" name="ans8" value="2">
+              <label style = "background-color: #2b3252"> None</label>
+              </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q9. The function which is called to render HTML to a web page in react? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans9" value="1">
+          <label style = "background-color: #2b3252"> ReactDom_render() </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans9" value="2">
+          <label style = "background-color: #2b3252"> render()</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans9" value="3">
+          <label style = "background-color: #2b3252"> render_DOM() </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans9" value="4">
+          <label style = "background-color: #2b3252"> DOM_HTML </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q10. Everything in react is a .................... </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans10" value="1">
+          <label style = "background-color: #2b3252"> Class </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans10" value="2">
+          <label style = "background-color: #2b3252"> Module</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans10" value="3">
+          <label style = "background-color: #2b3252"> Components </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans10" value="4">
+          <label style = "background-color: #2b3252"> Package </label>
+          </span>
+        </div>
+
+        <button   type="submit" class="button" onclick="calcScore()">Submit</button>
+  </form>
+      <div class="score-box">
+        <span class="score-txt">Score:</span><br><br>
+        <span id="qzs" class="score-value"> 0 </span>
+        <span class="score-value"> /10 </span>
+      </div>
+    </div>
+
+   <script src="./index.js"></script> 
+</body>
+</html>
